@@ -81,4 +81,5 @@ public class Diary {
     /* 食べたもの */
     @Column(name = "ate_today")
     private String ateToday;
+
 }
