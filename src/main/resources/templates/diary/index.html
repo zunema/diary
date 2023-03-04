@@ -31,6 +31,29 @@
             </td>
         </tr>
     </table>
+    <h1>新規投稿</h1>
+    <form th:action="@{/diary/newPost}" th:object="${newPostDto}" method="post">
+        <table>
+            <thead>
+                <tr>
+                    <th>出来事</th>
+                    <th>気分</th>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="event"></td>
+                    <td><input type="text" name="feeling"></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">投稿する</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
     <div id="root">リアクト試し..</div>
     <script>
         let dom = document.querySelector('#root');

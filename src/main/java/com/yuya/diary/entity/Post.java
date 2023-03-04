@@ -22,63 +22,63 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    /* 出来事 */
+    /** 出来事 */
     @Column(name = "event")
     private String event;
 
-    /* 投稿日時 */
+    /** 投稿日時 */
     @Column(name = "create_datetime", nullable = false)
     private LocalDateTime createDatetime;
 
-    /* 気分 */
+    /** 気分 */
     @Column(name = "feeling")
     private String feeling;
 
-    /* 感情 */
+    /** 感情 */
     @Column(name = "emotions")
     private String emotions;
 
-    /* やったこと */
+    /** やったこと */
     @Column(name = "deed")
     private String deed;
 
-    /* 明晰夢フラグ */
+    /** 明晰夢フラグ */
     @Column(name = "lucid_dream_flg")
     private Boolean lucidDream;
 
-    /* 起床 */
+    /** 起床 */
     @Column(name = "awake")
     private String awake;
 
-    /* ベッドにいる */
+    /** ベッドにいる */
     @Column(name = "inBed")
     private String inBed;
 
-    /* 不明な睡眠 */
+    /** 不明な睡眠 */
     @Column(name = "asleep_unspesified")
     private String asleepUnspesified;
 
-    /* 浅い睡眠 */
+    /** 浅い睡眠 */
     @Column(name = "asleep_core")
     private String asleepCore;
 
-    /* 熟睡中 */
+    /** 熟睡中 */
     @Column(name = "asleep_deep")
     private String asleepDeep;
 
-    /* レム睡眠 */
+    /** レム睡眠 */
     @Column(name = "asleep_rem")
     private String asleepRem;
 
-    /* 睡眠時間 */
+    /** 睡眠時間 */
     @Column(name = "asleep_time")
     private String asleepTime;
 
-    /* 気づいたこと */
+    /** 気づいたこと */
     @Column(name = "noticed")
     private String noticed;
 
-    /* 食べたもの */
+    /** 食べたもの */
     @Column(name = "ate_today")
     private String ateToday;
 }
