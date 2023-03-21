@@ -31,7 +31,7 @@ public class diaryController {
     }
 
     /**
-     * 新規投稿
+     * 新規投稿(仮)
      * 
      * @param newPostDto 入力データ
      * @param model      Model
@@ -41,6 +41,16 @@ public class diaryController {
     public String newPost(@ModelAttribute NewPostDto newPostDto, Model model) {
         newPostDto.getEvent();
         return "redirect:/diary/index";
+    }
+
+    /**
+     * 新規投稿ページ
+     * @param id
+     * @return
+     */
+    @GetMapping(value = "/create")
+    public String create(Model model){
+        return "diary/create";
     }
 
     /**
